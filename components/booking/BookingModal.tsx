@@ -26,7 +26,7 @@ export default function BookingModal({
   useEffect(() => {
     if (!isOpen) return;
 
-    const handleDocumentMouseDown = (e: MouseEvent) => {
+    const handleDocumentMouseDown = (e: Event) => {
       const target = e.target as HTMLElement;
       const pacContainer = target.closest('.pac-container');
       
