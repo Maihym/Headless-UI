@@ -245,7 +245,7 @@ export default function CustomerForm({
     });
 
     // Track clicks on pac-container items
-    const handleDocumentClick = (e: MouseEvent) => {
+    const handleDocumentClick = (e: Event) => {
       const target = e.target as HTMLElement;
       const pacItem = target.closest('.pac-item');
       const pacContainer = target.closest('.pac-container');
